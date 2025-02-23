@@ -1,13 +1,13 @@
 @media screen and (max-width: 900px) {
-    #działanie-preparatu{
+    #how-works{
         display: block;
     }
    
-#działanie-preparatu .description{
+#how-works .description{
    align-items: center
 
 }
-#działanie-preparatu ul li{
+#how-works ul li{
     width: 80%;
     justify-content: start;
     align-items: center;
@@ -15,17 +15,17 @@
     font-size: 2rem;
     padding-left: 3rem;
 }
-#działanie-preparatu .counter{
+#how-works .counter{
 gap: 3rem;
 margin: 2rem 0;
 }
 }
 
 @media screen and (max-width: 700px) {
-    #działanie-preparatu ul li{
+    #how-works ul li{
         font-size: 1.5rem;
     }
-    #działanie-preparatu .counter{
+    #how-works .counter{
         margin: 1.5rem 0;
         }
 }

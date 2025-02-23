@@ -13,11 +13,11 @@ html {
 body {
 	font-family: "Futura PT", sans-serif;
 }
-#działanie-preparatu{
+#how-works{
 	display: none;
 }
 
-#ingredients-mobile {
+#ingredients-mobile-section {
     display: none;
 }
 .divider{

@@ -3,46 +3,46 @@
 		display: none;
         position: relative;
 	}
-	#ingredients-mobile {
+	#ingredients-mobile-section {
 		display: block;
 	}
 
-	#ingredients-mobile .ingredients-container {
+	#ingredients-mobile-section .ingredients-container {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
 
-	#ingredients-mobile .ingredient {
+	#ingredients-mobile-section .ingredient {
 		width: 65%;
 	}
 
-	#ingredients-mobile .ingredient-main-h4 {
+	#ingredients-mobile-section .ingredient-main-h4 {
 		margin-bottom: 6rem;
 	}
 
-	#ingredients-mobile .ingredient-image-container {
+	#ingredients-mobile-section .ingredient-image-container {
 		position: relative;
 		opacity: 1;
 	}
-	#ingredients-mobile .vector {
+	#ingredients-mobile-section .vector {
 		display: block;
 	}
 
-	#ingredients-mobile .right {
+	#ingredients-mobile-section .right {
 		min-width: 44%;
 		transform: scaleX(-1) rotate(-18deg);
 		left: 57%;
 		top: 14%;
 	}
 
-	#ingredients-mobile .left {
+	#ingredients-mobile-section .left {
 		min-width: 44%;
 		right: 64%;
 		top: 24%;
 		transform: rotate(0deg);
 	}
-    #ingredients-mobile .doggy{
+    #ingredients-mobile-section .doggy{
         position: relative;
         overflow: hidden;
     }
