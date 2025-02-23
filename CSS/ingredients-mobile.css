@@ -1,6 +1,7 @@
 @media screen and (max-width: 900px) {
 	#ingredients {
 		display: none;
+        position: relative;
 	}
 	#ingredients-mobile {
 		display: block;

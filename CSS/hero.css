@@ -67,6 +67,9 @@
 #hero {
 	padding-top: 9rem;
 	background-color: var(--gray-background);
+	position: relative;
+
+
 }
 
 @media screen and (max-width: 1300px) {

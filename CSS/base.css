@@ -7,6 +7,8 @@
 }
 html {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
+
 }
 body {
 	font-family: "Futura PT", sans-serif;
@@ -130,3 +132,24 @@ h3 {
 	}
  }
 
+
+ .vector1, .vector2, .vector3{
+	position: absolute;
+ }
+ .vector1{
+	width: 15%;
+    top: 90%;
+    left: 5%;
+ }
+ .vector2{
+	width: 20%;
+    left: 81%;
+    transform: rotate(-122deg);
+    top: 70%;
+ }
+ .vector3{
+	width: 9%;
+    left: 90%;
+    top: 66%;
+    transform: rotate(-74deg);
+ }
