@@ -1,0 +1,32 @@
+.button {
+	border: none;
+	color: white; 
+	padding: 12px 24px; 
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold; 
+	cursor: pointer;
+	border-radius: 0;
+	transition: background-color 0.3s ease; 
+}
+.green {
+	background-color: #4caf50; 
+	align-self: left;
+}
+.green:hover {
+	background-color: #367c39;
+}
+.red {
+	background-color: var(--arthrohard-red);
+	padding: 1rem 5rem;
+}
+.red:hover {
+	background-color: brown;
+}
+
+@media screen and  (max-width: 1300px){
+
+
+}

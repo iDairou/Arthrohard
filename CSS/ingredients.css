@@ -1,0 +1,143 @@
+.ingredients-container {
+	align-items: stretch;
+	justify-content: space-evenly;
+	text-align: center;
+	width: 100%;
+}
+.ingredients-left-section,
+.ingredients-right-section {
+	flex-direction: column;
+	width: 20%;
+}
+.ingredient {
+	flex-direction: column;
+	position: relative;
+}
+.ingredient-main-h4{
+	text-align: center;
+	font-size: 1.5rem;
+	margin: 4rem 0;
+}
+
+.ingredient-image{
+	z-index: 1;
+}
+
+.ingredient .right{
+min-width: 30%;
+z-index: 0;
+top: 26%;
+    left: 75%;
+    
+    transform: rotate(10);
+
+}
+.ingredient .left{
+	min-width: 30%;
+    right: 67%;
+    top: 37%;
+}
+
+.small-circle {
+	width: 4rem;
+	height: 4rem;
+	background-color: #d9d9d9;
+	border-radius: 50%;
+}
+
+.ingredient-header {
+	font-size: 1.5rem;
+	margin: 2rem 0 1rem 0;
+}
+
+.ingredient-amount {
+	font-size: 1.2rem;
+	margin: 4rem 0 2rem 0;
+}
+.ingredient-description {
+	font-size: 1.2rem;
+	padding-bottom: 3rem;
+}
+.doggy {
+	margin-top: 10rem;
+}
+
+@media screen and (max-width: 1300px){
+
+	.ingredients-container {
+		position: relative;
+		align-items: stretch;
+		justify-content: space-evenly;
+		text-align: center;
+		width: 100%;
+	}
+	.ingredients-left-section,
+	.ingredients-right-section {
+		flex-direction: column;
+		width: 40%;
+	}
+	.ingredient {
+		flex-direction: column;
+		position: relative;
+	
+	}
+	.ingredient-image{
+		z-index: 1;
+	}
+	
+	.ingredient .right{
+	min-width: 30%;
+	z-index: 0;
+	top: 26%;
+		left: 75%;
+		
+		transform: rotate(10);
+	
+	}
+	.ingredient .left{
+		min-width: 30%;
+		right: 67%;
+		top: 37%;
+	}
+	
+	.small-circle {
+		width: 4rem;
+		height: 4rem;
+		background-color: #d9d9d9;
+		border-radius: 50%;
+	}
+	
+	.ingredient-header {
+		font-size: 1.5rem;
+		margin: 2rem 0 1rem 0;
+	}
+	
+	.ingredient-amount {
+		font-size: 1.4rem;
+		margin: 3rem 0 1rem 0;
+	}
+	.ingredient-description {
+		font-size: 1.2rem;
+		padding-bottom: 3rem;
+	}
+	.doggy {
+		margin-top: 5rem;
+	}
+	
+	.ingredient-image-container{
+		opacity: 0.085;
+		position: absolute;
+	}
+	.ingredient .red{
+		display: none;
+	}
+	.ingredient .vector{
+		display: none;
+	}
+
+}
+	
+@media screen and (max-width: 900px){
+
+
+}

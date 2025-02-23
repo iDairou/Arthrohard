@@ -1,0 +1,31 @@
+@media screen and (max-width: 900px) {
+    #działanie-preparatu{
+        display: block;
+    }
+   
+#działanie-preparatu .description{
+   align-items: center
+
+}
+#działanie-preparatu ul li{
+    width: 80%;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+    font-size: 2rem;
+    padding-left: 3rem;
+}
+#działanie-preparatu .counter{
+gap: 3rem;
+margin: 2rem 0;
+}
+}
+
+@media screen and (max-width: 700px) {
+    #działanie-preparatu ul li{
+        font-size: 1.5rem;
+    }
+    #działanie-preparatu .counter{
+        margin: 1.5rem 0;
+        }
+}

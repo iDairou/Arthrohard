@@ -1,0 +1,69 @@
+@media screen and (max-width: 900px) {
+	#ingredients {
+		display: none;
+	}
+	#ingredients-mobile {
+		display: block;
+	}
+
+	#ingredients-mobile .ingredients-container {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#ingredients-mobile .ingredient {
+		width: 65%;
+	}
+
+	#ingredients-mobile .ingredient-main-h4 {
+		margin-bottom: 6rem;
+	}
+
+	#ingredients-mobile .ingredient-image-container {
+		position: relative;
+		opacity: 1;
+	}
+	#ingredients-mobile .vector {
+		display: block;
+	}
+
+	#ingredients-mobile .right {
+		min-width: 44%;
+		transform: scaleX(-1) rotate(-18deg);
+		left: 57%;
+		top: 14%;
+	}
+
+	#ingredients-mobile .left {
+		min-width: 44%;
+		right: 64%;
+		top: 24%;
+		transform: rotate(0deg);
+	}
+    #ingredients-mobile .doggy{
+        position: relative;
+        overflow: hidden;
+    }
+	.doggy-image {
+		position: relative;
+		z-index: 1;
+	}
+
+	.right-doggy {
+        position: absolute;
+        z-index: 0;
+        min-width: 20%;
+        bottom: -15%;
+        left: 83%;
+        transform: rotate(13deg);
+	}
+	.left-doggy {
+        position: absolute;
+		z-index: 0;
+        min-width: 20%;
+    top: 29%;
+    left: 17%;
+    transform: rotate(-11deg);
+	}
+}
