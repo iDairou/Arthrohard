@@ -13,29 +13,28 @@
 	flex-direction: column;
 	position: relative;
 }
-.ingredient-main-h4{
+.ingredient-main-h4 {
 	text-align: center;
 	font-size: 1.5rem;
 	margin: 4rem 0;
 }
 
-.ingredient-image{
+.ingredient-image {
 	z-index: 1;
 }
 
-.ingredient .right{
-min-width: 30%;
-z-index: 0;
-top: 26%;
-    left: 75%;
-    
-    transform: rotate(10);
-
-}
-.ingredient .left{
+.ingredient .right {
 	min-width: 30%;
-    right: 67%;
-    top: 37%;
+	z-index: 0;
+	top: 26%;
+	left: 75%;
+
+	transform: rotate(10);
+}
+.ingredient .left {
+	min-width: 30%;
+	right: 67%;
+	top: 37%;
 }
 
 .small-circle {
@@ -62,8 +61,102 @@ top: 26%;
 	margin-top: 10rem;
 }
 
-@media screen and (max-width: 1300px){
+.ingredient {
+	position: relative;
+	cursor: default;
+}
 
+.moving-underline {
+	position: relative;
+	display: inline-block;
+}
+
+.ingredient .moving-underline::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -2rem;
+	width: 100%;
+	height: 1px;
+	background-color: black;
+	transform: scaleX(0);
+	transition: transform 0.25s ease-in-out;
+}
+
+.ingredient:hover > .moving-underline::after {
+	transform-origin: bottom center;
+	transform: scaleX(1);
+	color: black;
+}
+
+.ingredient:hover > .moving-underline {
+	color: black;
+}
+#parallax {
+	position: relative;
+    padding-bottom: 40rem;
+    background-image: url(../images/piesek\ 1.png);
+    background-repeat: no-repeat;
+    background-position: bottom center, 27% 121%, 82% 110%;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+#parallax::before{
+	content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/Vector11.png);
+    background-repeat: no-repeat;
+    background-position: 27% 119%;
+    background-size: 19rem;
+    z-index: -1;
+    background-attachment: fixed;
+    pointer-events: none;
+}
+#parallax::after{
+	content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/Vector22.png);
+    background-repeat: no-repeat;
+	background-position: 80% 106%;
+    background-size: 15rem;
+    z-index: -1;
+    background-attachment: fixed;
+    pointer-events: none;
+}
+
+
+/*  
+ .doggy{
+	position: relative;
+	overflow: hidden;
+ }
+.doggy-image {
+	position: relative;
+	z-index: 1;
+}
+
+.right-doggy {
+    position: absolute;
+    z-index: -1;
+    min-width: 12%;
+    bottom: 0%;
+    left: 66%;
+    transform: rotate(17deg);
+}
+.left-doggy {
+    position: absolute;
+    z-index: -1;
+    min-width: 12%;
+    top: 35%;
+    left: 29%;
+    transform: rotate(-17deg);
+} */
+
+@media screen and (max-width: 1300px) {
 	.ingredients-container {
 		position: relative;
 		align-items: stretch;
@@ -75,43 +168,44 @@ top: 26%;
 	.ingredients-right-section {
 		flex-direction: column;
 		width: 40%;
+		z-index: 1;
 	}
 	.ingredient {
 		flex-direction: column;
 		position: relative;
-	
 	}
-	.ingredient-image{
-		z-index: 1;
+
+	.ingredient-image {
+		z-index: 0;
+		user-select: none;
 	}
-	
-	.ingredient .right{
-	min-width: 30%;
-	z-index: 0;
-	top: 26%;
+
+	.ingredient .right {
+		min-width: 30%;
+		z-index: 0;
+		top: 26%;
 		left: 75%;
-		
+
 		transform: rotate(10);
-	
 	}
-	.ingredient .left{
+	.ingredient .left {
 		min-width: 30%;
 		right: 67%;
 		top: 37%;
 	}
-	
+
 	.small-circle {
 		width: 4rem;
 		height: 4rem;
 		background-color: #d9d9d9;
 		border-radius: 50%;
 	}
-	
+
 	.ingredient-header {
 		font-size: 1.5rem;
 		margin: 2rem 0 1rem 0;
 	}
-	
+
 	.ingredient-amount {
 		font-size: 1.4rem;
 		margin: 3rem 0 1rem 0;
@@ -123,21 +217,15 @@ top: 26%;
 	.doggy {
 		margin-top: 5rem;
 	}
-	
-	.ingredient-image-container{
+
+	.ingredient-image-container {
 		opacity: 0.085;
 		position: absolute;
 	}
-	.ingredient .red{
+	.ingredient .red {
 		display: none;
 	}
-	.ingredient .vector{
+	.ingredient .vector {
 		display: none;
 	}
-
-}
-	
-@media screen and (max-width: 900px){
-
-
 }

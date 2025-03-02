@@ -37,5 +37,12 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 
 	const api = new API();
-	api.loadData();
+	   window.addEventListener("scroll", () => {
+				if (
+					window.innerHeight + window.scrollY >=
+					document.body.offsetHeight - 300
+				) {
+					api.loadData();
+				}
+			});
 });

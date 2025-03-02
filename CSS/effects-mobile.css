@@ -1,6 +1,7 @@
 @media screen and (max-width: 900px) {
     #how-works{
         display: block;
+        cursor: default;
     }
    
 #how-works .description{

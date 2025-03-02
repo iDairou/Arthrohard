@@ -5,6 +5,7 @@
 	}
 	#ingredients-mobile-section {
 		display: block;
+
 	}
 
 	#ingredients-mobile-section .ingredients-container {
@@ -13,8 +14,12 @@
 		align-items: center;
 	}
 
+
 	#ingredients-mobile-section .ingredient {
 		width: 65%;
+	}
+	#ingredients-mobile-section .ingredient-image{
+		z-index: 1;
 	}
 
 	#ingredients-mobile-section .ingredient-main-h4 {

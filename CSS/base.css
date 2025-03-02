@@ -8,8 +8,18 @@
 html {
 	scroll-behavior: smooth;
 	overflow-x: hidden;
-
 }
+main{
+	overflow: hidden;
+}
+
+h1,h2,h3,h4{
+	font-weight: 450;
+}
+p{
+	font-weight: 400;
+}
+
 body {
 	font-family: "Futura PT", sans-serif;
 }
@@ -130,7 +140,12 @@ h3 {
 	.divider{
 		display: block;
 	}
+
+	#parallax{
+		display: none;
+	}
  }
+
 
 
  .vector1, .vector2, .vector3{
