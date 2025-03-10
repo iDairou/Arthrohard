@@ -168,3 +168,11 @@ h3 {
     top: 66%;
     transform: rotate(-74deg);
  }
+
+ @media (min-width: 2000px) {
+h3{
+	font-size: 5rem;
+}
+	
+  }
+  

@@ -26,7 +26,9 @@
 	background-color: brown;
 }
 
-@media screen and  (max-width: 1300px){
-
+@media screen and  (min-width: 2000px){
+	.button{
+		font-size: 2rem
+	}
 
 }

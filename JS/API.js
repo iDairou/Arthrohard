@@ -103,6 +103,27 @@ class API {
 		this.modalWrap.classList.remove("active");
 	}
 
+	resetAndLoadData() {
+		this.pageNumber = 1;
+		this.totalLoadedItems = 0;
+		this.productsList.innerHTML = "";
+		this.loadData();
+		this.initScrollListener();
+	}
+
+	initScrollListener = () => {
+		window.addEventListener("scroll", () => {
+			if (this.isBottomVisible()) {
+				this.loadData();
+			} else if (
+				this.totalLoadedItems < parseInt(this.productCountSelect.value)
+			) {
+				// Jeśli są jeszcze produkty do załadowania, wywołaj loadData
+				this.loadData();
+			}
+		});
+	};
+
 	initScrollListener() {
 		window.addEventListener("scroll", () => {
 			if (this.isBottomVisible()) {

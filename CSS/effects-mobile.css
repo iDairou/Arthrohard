@@ -1,32 +1,40 @@
 @media screen and (max-width: 900px) {
-    #how-works{
-        display: block;
-        cursor: default;
-    }
-   
-#how-works .description{
-   align-items: center
+	#how-works {
+		display: block;
+		cursor: default;
+	}
 
-}
-#how-works ul li{
-    width: 80%;
-    justify-content: start;
-    align-items: center;
-    margin: 0;
-    font-size: 2rem;
-    padding-left: 3rem;
-}
-#how-works .counter{
-gap: 3rem;
-margin: 2rem 0;
-}
+	#how-works .description {
+		align-items: center;
+	}
+	#how-works ul li {
+		width: 80%;
+		justify-content: start;
+		align-items: center;
+		margin: 0;
+		font-size: 2rem;
+
+	}
+	#how-works .counter {
+		gap: 3rem;
+		margin: 2rem 0;
+	}
 }
 
 @media screen and (max-width: 700px) {
-    #how-works ul li{
-        font-size: 1.5rem;
-    }
-    #how-works .counter{
-        margin: 1.5rem 0;
-        }
+	#how-works ul li {
+		font-size: 1.5rem;
+	}
+	#how-works .counter {
+		margin: 1.5rem 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#how-works ul li {
+		font-size: 1.3rem;
+	}
+	#how-works .counter {
+		margin: 1rem 0;
+	}
 }
