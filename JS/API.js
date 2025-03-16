@@ -21,13 +21,21 @@ class API {
 		this.isLoading = false;
 		this.totalLoadedItems = 0;
 		this.initScrollListener();
+		this.loadData(); // Początkowe załadowanie danych
 	}
 
 	resetAndLoadData() {
-		this.pageNumber = 1;
-		this.totalLoadedItems = 0;
-		this.productsList.innerHTML = "";
-		this.loadData();
+		const newMaxItems = parseInt(this.productCountSelect.value);
+		if (newMaxItems > this.totalLoadedItems) {
+			this.pageNumber = Math.ceil(this.totalLoadedItems / 5) + 1;
+			this.loadData();
+		} else if (newMaxItems < this.totalLoadedItems) {
+
+			while (this.productsList.children.length > newMaxItems) {
+				this.productsList.removeChild(this.productsList.lastChild);
+			}
+			this.totalLoadedItems = newMaxItems;
+		}
 	}
 
 	loadData() {
@@ -38,7 +46,6 @@ class API {
 		this.isLoading = true;
 		const itemsToLoad = Math.min(5, maxItems - this.totalLoadedItems);
 		const options = { method: "GET" };
-		console.log(itemsToLoad);
 		return this._fetch(
 			options,
 			`?pageNumber=${this.pageNumber}&pageSize=${itemsToLoad}`
@@ -103,34 +110,13 @@ class API {
 		this.modalWrap.classList.remove("active");
 	}
 
-	resetAndLoadData() {
-		this.pageNumber = 1;
-		this.totalLoadedItems = 0;
-		this.productsList.innerHTML = "";
-		this.loadData();
-		this.initScrollListener();
-	}
-
 	initScrollListener = () => {
 		window.addEventListener("scroll", () => {
 			if (this.isBottomVisible()) {
 				this.loadData();
-			} else if (
-				this.totalLoadedItems < parseInt(this.productCountSelect.value)
-			) {
-				// Jeśli są jeszcze produkty do załadowania, wywołaj loadData
-				this.loadData();
 			}
 		});
 	};
-
-	initScrollListener() {
-		window.addEventListener("scroll", () => {
-			if (this.isBottomVisible()) {
-				this.loadData();
-			}
-		});
-	}
 
 	isBottomVisible() {
 		const rect = this.productsList.getBoundingClientRect();
